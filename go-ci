@@ -4,7 +4,6 @@ export PATH=$PATH:/usr/local/bin
 
 if [ $1 == "test" ]
 then
-    carthage update --platform iOS
     xcodebuild test -scheme App -destination 'platform=iOS Simulator,OS=10.0,name=iPhone 6'
 fi
 if [ $1 == "build" ]
