@@ -1,0 +1,2 @@
+github "Alamofire/Alamofire" "4.0.1"
+git "../Networking" "1c6dbe9119e4ab09be957b32809e3cf4d478416a"
