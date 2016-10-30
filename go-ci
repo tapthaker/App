@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+export PATH=$PATH:/usr/local/bin
+
+if [ $1 == "test" ]
+then
+    carthage update --platform iOS
+    xcodebuild test -scheme App -destination 'platform=iOS Simulator,OS=10.0,name=iPhone 6'
+fi
+if [ $1 == "build" ]
+then
+    rm -rf Build/
+    xcodebuild archive -scheme App -archivePath Build/App.xcarchive
+    xcodebuild -exportArchive -archivePath Build/App.xcarchive -exportPath Build/App.ipa
+fi
