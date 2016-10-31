@@ -16,6 +16,7 @@
 		FF4346011DC5097F0065066B /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4346001DC5097F0065066B /* AppUITests.swift */; };
 		FF4740C81DC69CD3004DF4C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4740C61DC69CD3004DF4C9 /* Alamofire.framework */; };
 		FF4740C91DC69CD3004DF4C9 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4740C71DC69CD3004DF4C9 /* Networking.framework */; };
+		FF4740CF1DC6C5A2004DF4C9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4740CE1DC6C5A2004DF4C9 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FF4346021DC5097F0065066B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4740C61DC69CD3004DF4C9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		FF4740C71DC69CD3004DF4C9 /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = Carthage/Build/iOS/Networking.framework; sourceTree = "<group>"; };
+		FF4740CE1DC6C5A2004DF4C9 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				FF4345E71DC5097F0065066B /* Assets.xcassets */,
 				FF4345E91DC5097F0065066B /* LaunchScreen.storyboard */,
 				FF4345EC1DC5097F0065066B /* Info.plist */,
+				FF4740CE1DC6C5A2004DF4C9 /* Presenter.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4740CF1DC6C5A2004DF4C9 /* Presenter.swift in Sources */,
 				FF4345E31DC5097F0065066B /* ViewController.swift in Sources */,
 				FF4345E11DC5097F0065066B /* AppDelegate.swift in Sources */,
 			);

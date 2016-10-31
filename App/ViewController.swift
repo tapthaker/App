@@ -16,21 +16,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        apiClient.request(url: "https://httpbin.org/get", params: nil, method: .get) { [weak self] (response) in
-
-
-            self?.label.text = response.leftOrElse(b: ["FOO": "BAR"]).description
-
-
+        let presenter = DummyPresenter(apiClient: apiClient)
+        presenter.makeGetRequest() { [weak self] response in
+            self?.label.text = response
         }
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
